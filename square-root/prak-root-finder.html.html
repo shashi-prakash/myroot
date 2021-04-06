@@ -1,0 +1,122 @@
+<html> 
+<head> 
+<title>Root Finder </title> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head> 
+
+ 
+
+<body> 
+     
+	
+	
+	<script type="text/javascript"> 
+  
+ 
+	
+function getcube(){ 
+
+ 
+var number=document.getElementById("number").value;  
+var result=number*number*number;
+if(result=="" || result=="null")	
+{
+document.getElementById('get_error').innerHTML = "OOPS ! Input Field Can't Empty !!";
+document.getElementById('get_value').style.visibility='hidden';
+document.getElementById('get_error').style.visibility='visible';
+
+}  else{
+document.getElementById('get_value').innerHTML = "Cube Root Of " +number+" = "+ result;
+document.getElementById('get_value').style.visibility='visible';
+document.getElementById('get_error').style.visibility='hidden';
+
+}
+ 
+} 
+
+function getsquare (){  
+var number=document.getElementById("number").value;  
+var result=number*number;
+if(result == ""|| result=="null")	
+{
+ 
+document.getElementById('get_error').innerHTML = "OOPS ! Input Field Can't Empty !!";
+document.getElementById('get_value').style.visibility='hidden';
+document.getElementById('get_error').style.visibility='visible';
+ 
+ 
+
+}  else{
+
+document.getElementById('get_value').innerHTML = "Squre Root Of " +number+" = "+ result;
+document.getElementById('get_value').style.visibility='visible';
+document.getElementById('get_error').style.visibility='hidden'
+ 
+}
+}
+// Design and develop by Prakash Shashi
+
+</script>  
+<div class="card text-center text-white bg-info">
+  <div class="card-header mt-4 mb-4 bg-danger ">
+    <i class="fa fa-calculator mt-4 mb-4 " style="color:white; font-size:2rem"> ROOT FINDER</i>
+  </div>
+  
+  <div class="card-body mt-4 mb-4">
+  <form>  
+  <div class="form-group mx-sm-3 "> 
+    <input type="number" class="form-control mb-4 mt-4"  id="number" name="number" placeholder="Please Enter Number" autocomplete="off">
+  </div>
+  <div class="row">
+ 
+<h2  style=" color: white;margin-left:2.2rem" id="get_value">  </h2>
+<h2 style="color:pink;margin-left:1.7rem" id="get_error">  </h2>
+
+
+</div> 
+
+ 
+<button type="button" class="btn btn-outline-warning mr-2 mt-4 mb-4" value="cube" onclick="getsquare() ">Square Root</button> 
+<button type="button" class="btn btn-outline-warning mt-4 mb-4 mr-2" value="square" onclick="getcube()">Cube Root</button> 
+<button type="button" class="btn btn-outline-warning mt-4 mb-4" value="square" onclick="reset()">Reset</button> 
+ 
+</form> 
+</div>   
+  </div>
+  <style>
+  #number{
+  
+  font-size: 1.5rem;
+    color: rgb(243, 20, 169);
+    margin-top: 5vh;
+	}
+
+
+  @media (max-width: 600px) {
+    #number{
+    font-size: 2rem;
+    color: rgb(243, 20, 169);
+    margin-top: 20vh;
+	}
+ 
+  
+}
+  
+  
+  </style>
+  
+
+
+</body> 
+
+</html>
+
+ 
